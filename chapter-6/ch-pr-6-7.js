@@ -5,7 +5,7 @@ function loop1(val) {
 	if (val < 1) {
 		return;
 	} 
-		return loop1(val - 1);
+	return loop1(val - 1);
 }
 loop1(start);
 
