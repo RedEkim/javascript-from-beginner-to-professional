@@ -6,4 +6,4 @@ console.log(encoded_w);
 
 const web_URI = "http://www.basescripts.com?=Hello World";
 const encoded_web_URI = encodeURI(web_URI);
-console.log(encoded_web_URI);
+console.log(`Encode: ${encoded_web_URI}`);
