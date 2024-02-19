@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The second project of chapter 10</title>
+    </head>
+    <body>
+        <div class="message">Complete JavaScript Course</div>
+        <div>
+            <input type="text" id="addFriend">
+            <input type="button" id="addNew" value="Add Friend">
+        </div>
+        <table id="output">
+
+        </table>
+        <script>
+            const myArray = ["Mike", "Olga", "Katya", "Motya", "Kolya", "Petya"] // step 1
+            const message = document.getElementById("message"); // step 2
+            const newInput = document.getElementById("addFriend"); // step 2
+            const addNew = document.getElementById("addNew"); // step 2
+            const output = document.getElementById("output"); // step 2
+
+            // start of step 3
+            addNew.onclick = function () {
+                const newFriend = newInput.value;
+                adder(newFriend, myArray.length, 0);
+                myArray.push(newFriend);
+            }
+            // end of step 3
+            
+            // start of step 4
+            function build() {
+                myArray.forEach((item, index) => {
+                    adder(item, index, 0);
+                })
+            }
+            // end of step 4
+
+            // start of step 5-9
+            function adder(name, index, counter) {
+                const tr = document.createElement("tr");
+                
+                const td1 = document.createElement("td");
+                td1.classList.add("box");
+                td1.textContent = index + 1;
+                
+                const td2 = document.createElement("td");
+                td2.textContent = name;
+                
+                const td3 = document.createElement("td");
+                td3.textContent = counter;
+                
+                tr.append(td1);
+                tr.append(td2);
+                tr.append(td3);
+                
+                tr.onclick = function () {
+                    console.log(tr.lastChild);
+                    let val = Number(tr.lastChild.textContent);
+                    val++
+                    tr.lastChild.textContent = val;
+                }
+                output.appendChild(tr);
+            }
+            // end of step 5-9
+        </script>
+    </body>
+</html>
