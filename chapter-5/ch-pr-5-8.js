@@ -6,7 +6,7 @@ for (let i = 0; i < 10; i++) {
 	if (i === skip) {	
 		let counter = i;
 		console.log(`Skip ${counter}`);
-		break;
+		continue;
 	}
 	str += i;
 	
