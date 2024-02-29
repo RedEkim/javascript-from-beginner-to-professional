@@ -6,8 +6,8 @@ console.log("Ceil number:", Math.ceil(number));
 console.log("Floor number:", Math.floor(number));
 console.log("Round number:", Math.round(number));
 console.log("Random number:", Math.random());
-console.log("Random number 0 to 10:", Math.floor(Math.random() * 11)); //0-10
-console.log("Random number 0 to 100:", Math.floor(Math.random() * 100)); //0-100
+console.log("Random number 1 to 10:", Math.floor(Math.random() * 11)); //0-10
+console.log("Random number 1 to 100:", Math.floor(Math.random() * 101)); //1-100
 
 function randomNumber(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
