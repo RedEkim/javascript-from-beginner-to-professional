@@ -14,5 +14,5 @@ function randomNumber(min, max) {
 }
 
 for (let x = 0; x < 100; x++) {
-	console.log(randomNumber(1, 25));
+	console.log(randomNumber(1, 100));
 }
