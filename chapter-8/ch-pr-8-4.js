@@ -1,4 +1,4 @@
-const val = "thIs will be capiTalized for each word This Will Be Capitalized For Each Word.";
+const val = "thIs will be capiTalized for each word";
 
 function wordsCaps(str) {
 	str = str.toLowerCase();
