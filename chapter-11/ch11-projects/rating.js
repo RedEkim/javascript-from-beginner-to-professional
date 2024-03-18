@@ -16,5 +16,3 @@ function starRate(e) {
         }
     })
 }
-
-console.log(stars);
