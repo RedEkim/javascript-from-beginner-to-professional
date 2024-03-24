@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The second project of chapter 12</title>
+        <style>
+            .hide {
+                display: none;
+            }
+            .error {
+                color: red;
+                font-size: 0.8em;
+                font-family: sans-serif;
+                font-style: italic;
+            }
+            input {
+                border-color: #ddd;
+                width: 400px;
+                display: block;
+                font-size: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="myForm">Email:
+            <input type="text" name="email"> <span class="error hide">dfdfdf</span>
+            <br> Password:
+            <input type="password" name="password"> <span class="error hide"></span>
+            <br> User name:
+            <input type="text" name="userName"> <span class="error hide"></span>
+            <br>
+            <input type="submit" value="Sign Up">
+        </form>
+
+        <script type="text/JavaScript" src="validatorOfForms.js"></script>
+    </body>
+</html>
