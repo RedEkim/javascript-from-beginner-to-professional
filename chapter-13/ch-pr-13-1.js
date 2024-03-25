@@ -1,5 +1,3 @@
-const names = ["Mike", "Irina", "Olya", "Kolya"]
-
 function greet(fullName) {
     console.log(`Welcome ${fullName[0]} ${fullName[1]}`);
 }
